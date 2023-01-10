@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title{
+    animation: deslizarIzquierda 1s normal ease;
+    -webkit-animation: deslizarIzquierda 1s normal ease;
+}
+
+.animacion{
+    animation: rotate 3s normal linear;
+    -webkit-animation: rotate 3s normal linear;
+}
+
+@keyframes deslizarIzquierda {
+    0% {
+        transform: translateX(-300px);
+        -webkit-transform: translateX(-300px);
+        -moz-transform: translateX(-300px);
+        -ms-transform: translateX(-300px);
+        -o-transform: translateX(-300px);
+}
+    100% {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+}
+}
+
+@keyframes rotate {
+    100% {
+      transform: translate3d(0, 0, 0) rotate3d(1, 1, 0, -360deg) rotate(1deg);
+    }
+  }
